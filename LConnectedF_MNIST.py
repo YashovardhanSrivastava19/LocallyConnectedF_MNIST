@@ -29,8 +29,8 @@ tBoardCallback = tf.keras.callbacks.TensorBoard(LOGS_DIR,histogram_freq = 1, pro
 
 
 #DataLoading and Preprocessing
-TrainImages,TrainLabels = numpy.load("DatasetDirectory/Conv_Fashion_MNIST_TrainImages_0_1.npy"),numpy.load("DatasetDirectory/Conv_Fashion_MNIST_TrainLabels_Categorical.npy")
-TestImages,TestLabels   = numpy.load("DatasetDirectory/Conv_Fashion_MNIST_TestImages_0_1.npy"),numpy.load("DatasetDirectory/Conv_Fashion_MNIST_TestLabels_Categorical.npy")
+TrainImages,TrainLabels = numpy.load("Conv_Fashion_MNIST_TrainImages_0_1.npy"),numpy.load("Conv_Fashion_MNIST_TrainLabels_Categorical.npy")
+TestImages,TestLabels   = numpy.load("Conv_Fashion_MNIST_TestImages_0_1.npy"),numpy.load("Conv_Fashion_MNIST_TestLabels_Categorical.npy")
 
 model = tf.keras.Sequential([
     tf.keras.layers.InputLayer(input_shape = INPUT_SHAPE),
